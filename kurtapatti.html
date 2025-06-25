@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Design By Aiman</h1>
+   <button><a href="baazu.html" >Baazu</a></button>
+    <button><a href="collar.html" >Collar</a></button>
+    <button><a href="neck.html" >Neck</a></button>
+    <button><a href="daman.html" >Daman</a></button>
+    <button><a href="index.html" >Front</a></button>
+    <button><a href="back.html" >Back</a></button>
+    <button><a href="pancha.html" >Pancha</a></button>
+    <button><a href="trouzer.html" >Trouzer</a></button>
+    <button><a href="cutwork.html" >Cut work</a></button>
+    <button><a href="Abaya.html" >Abaya</a></button>
+    <button><a href="Dubata.html" >Dubata</a></button>
+    <input type="text" id="searchbar" placeholder="search">
+</header>
+
+        <section>
+
+<div class="card-container">
+
+   <div class="card">
+<img src="sleeves.jpg" >
+<p>S1</p>
+</div>
+<div class="card">
+<img src="sleeves.jpg" >
+<p>S2</p>
+</div>
+<div class="card">
+<img src="sleeves.jpg" >
+<p>S3</p>
+</div>
+<div class="card">
+<img src="sleeves.jpg" >
+<p>S4</p>
+</div>
+<div class="card">
+<img src="sleeves.jpg" >
+<p>S5</p>
+</div>
+<div class="card">
+<img src="sleeves.jpg" >
+<p>S6</p>
+</div>
+<div class="card">
+<img src="sleeves.jpg" >
+<p>S7</p>
+</div>
+<div class="card">
+<img src="sleeves.jpg" >
+<p>S8</p>
+</div>
+<div class="card">
+<img src="sleeves.jpg" >
+<p>S9</p>
+</div>
+<div class="card">
+<img src="sleeves.jpg" >
+<p>S10</p>
+</div>
+<div class="card">
+<img src="sleeves.jpg" >
+<p>S11</p>
+</div>
+<div class="card">
+<img src="sleeves.jpg" >
+<p>S12</p>
+</div>
+<div class="card">
+<img src="sleeves.jpg" >
+<p>S13</p>
+</div>
+<div class="card">
+<img src="sleeves.jpg" >
+<p>S14</p>
+</div>
+<div class="card">
+<img src="sleeves.jpg" >
+<p>S15</p>
+</div>
+</div>
+</section>
+<script src="jquery.js"></script>
+<script>
+$("#searchbar").keyup(function(){
+var searchtext = $(this).val().toLowerCase();//am
+$(".card").filter(function(){
+var cardtext = $(this).text().toLowerCase();
+if 
+(cardtext.indexOf(searchtext)>-1){
+$(this).show()
+}
+else
+$(this).hide()
+})
+})
+</script>
+</body>
+</html>
